@@ -1,33 +1,133 @@
-<!DOCTYPE html>
-<html>
-<head>
-<title>Diese Seite befindet sich im Wartungsmodus</title>
-</head>
-<body style="background:url('https://www.tmsproshop.de/wp-content/uploads/2017/10/front-1.jpg')">
-<div style="margin:0px auto; width: 80%; text-align:center;margin-top:40px;">
-<h1 style="font-size:3em;color:white";>Diese Seite befindet sich im Wartungsmodus</h1>
-<p>Wir haben derzeit eine technische Herausforderung und sind dabei die Webseite wiederherzustellen.</p>
-<p>Sie erreichen uns weiterhin telefonisch und per E-Mail</p>
-<p><a href="tel:08005292292*">0800 / 5 292 292 8</a> (kostenlos aus dem Dt. Fest- und Handynetz)</p>
-<p><a href="mailto:verkauf@tmsproshop.de">verkauf@tmsproshop.de</a></p>
-<div/>
-<style>
-p {
-color:white;
-font-weight:800;
-font-size:2em;
-text-shadow: 2px 2px 2px black;
-}
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wir sind gleich wieder für Sie da</title>
+    <!-- Pico.css v2 -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
+    />
+    <style>
+      :root {
+        --pico-primary: #d4af37;
+      }
+      body {
+        background:
+          linear-gradient(rgba(15, 23, 42, 0.85), rgba(15, 23, 42, 0.85)),
+          url("https://www.tmsproshop.de/wp-content/uploads/2017/10/front-1.jpg");
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        padding: 1rem;
+        font-family:
+          system-ui,
+          -apple-system,
+          sans-serif;
+      }
+      main.card-container {
+        background: rgba(30, 41, 59, 0.7);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 24px;
+        padding: 3rem 2rem;
+        max-width: 580px;
+        width: 100%;
+        text-align: center;
+        box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+      }
+      .icon-wrapper {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+        display: inline-block;
+        animation: pulse 2s infinite ease-in-out;
+      }
+      h1 {
+        color: #ffffff;
+        font-size: 2.2rem;
+        font-weight: 700;
+        letter-spacing: -0.02em;
+        margin-bottom: 1rem;
+      }
+      .subtitle {
+        color: #94a3b8;
+        font-size: 1.1rem;
+        line-height: 1.6;
+        margin-bottom: 2.5rem;
+      }
+      .contact-box {
+        background: rgba(15, 23, 42, 0.4);
+        border-radius: 16px;
+        padding: 1.5rem;
+        border: 1px solid rgba(255, 255, 255, 0.05);
+      }
+      .contact-box h2 {
+        font-size: 1rem;
+        color: #cbd5e1;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        margin-bottom: 1.2rem;
+      }
+      .btn-group {
+        display: flex;
+        flex-direction: column;
+        gap: 0.75rem;
+      }
+      .btn-group a.button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+        margin-bottom: 0;
+        font-weight: 600;
+        transition: all 0.2s ease;
+      }
+      .btn-group a.button:hover {
+        transform: translateY(-2px);
+      }
+      @keyframes pulse {
+        0%,
+        100% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.05);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="card-container">
+      <div class="icon-wrapper">🛠️</div>
+      <h1>Bitte entschuldigen Sie die Störung!</h1>
+      <p class="subtitle">
+        Wir verpassen unserer Webseite im Hintergrund ein wichtiges Update. In
+        Kürze sind wir wieder wie gewohnt für Sie da.
+      </p>
 
-h1 {
-color:white;
-font-weight:800;
-font-size:2em;
-text-shadow: 2px 2px 2px black;
-}
+      <div class="contact-box">
+        <h2>Direkter Kontakt</h2>
+        <div class="btn-group">
+          <a href="tel:080052922928" class="button" role="button">
+            📞 0800 / 5 292 292 8
+          </a>
+          <a
+            href="mailto:verkauf@tmsproshop.de"
+            class="button outline contrast"
+            role="button"
+          >
+            ✉️ verkauf@tmsproshop.de
+          </a>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
 
-a {
-color:gold;
-}
-</head>
-<body>
